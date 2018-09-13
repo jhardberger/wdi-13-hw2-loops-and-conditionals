@@ -54,25 +54,42 @@
 
 //Getting to Know You
 
-const shahzad = ["Shahzad", 1000, "Austin"];
-const jim = ["Jim", 16, "All cities"];
-const reuben = ["Reuben", 22, "Durham"];
-const daniel = ["Daniel", 186, "Dallas"];
-const ryan = ["Ryan", 65, "Denver"];
+// const shahzad = ["Shahzad", 1000, "Austin"];
+// const jim = ["Jim", 16, "All cities"];
+// const reuben = ["Reuben", 22, "Durham"];
+// const daniel = ["Daniel", 186, "Dallas"];
+// const ryan = ["Ryan", 65, "Denver"];
 
-shahzad[0] = "Gameboy";
-daniel[1] = (daniel[1] + 1)
-ryan[2] = "Gotham City";
-reuben.pop(2);
-reuben.push("Chicago");
-jim.pop(2); 
-jim.push("Hong Kong", "Geneva", "Sao Paolo")
-jim.splice(2, 1);
+// shahzad[0] = "Gameboy";
+// daniel[1] = (daniel[1] + 1)
+// ryan[2] = "Gotham City";
+// reuben.pop(2);
+// reuben.push("Chicago");
+// jim.pop(2); 
+// jim.push("Hong Kong", "Geneva", "Sao Paolo")
 
-console.log(shahzad);
-console.log(jim);
-console.log(reuben);
-console.log(daniel);
-console.log(ryan);
+//Bonus: 
 
+// jim.splice(2, 1);
 
+// console.log(shahzad);
+// console.log(jim);
+// console.log(reuben);
+// console.log(daniel);
+// console.log(ryan);
+
+//Yell at the Ninja Turtles
+
+let ninjaTurtles = ['mikey', 'Donny', 'leo', 'Raff']
+
+// for (i = 0; i < ninjaTurtles.length; i++) {
+// 	console.log(ninjaTurtles[i].toUpperCase())
+// }
+
+//Bonus:
+
+for (i = 0; i < ninjaTurtles.length; i++) {
+	if (i % 2 === 0) { 
+		console.log(ninjaTurtles[i].toUpperCase())
+	} else console.log(ninjaTurtles[i].toLowerCase())
+} 
