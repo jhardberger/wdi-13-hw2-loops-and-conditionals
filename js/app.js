@@ -15,11 +15,11 @@
 //Excited Kitten
 
 // const catPhrases = ['...human...why you taking pictures of me?..', '..the catnip made me do it...', '..why does the red dot always get away...'];
-// const randomPhrase = catPhrases[Math.floor(catPhrases.length * Math.random())];
 
 // for (i = 0; i < 20; i++) {
 // 	console.log('Love me, pet me! HSSSSSS!')
 // 	if (i % 2 === 0) {
+// 		const randomPhrase = catPhrases[Math.floor(catPhrases.length * Math.random())];
 // 		console.log(randomPhrase);
 // 	}
 // }
@@ -80,7 +80,7 @@
 
 //Yell at the Ninja Turtles
 
-let ninjaTurtles = ['mikey', 'Donny', 'leo', 'Raff']
+//let ninjaTurtles = ['mikey', 'Donny', 'leo', 'Raff']
 
 // for (i = 0; i < ninjaTurtles.length; i++) {
 // 	console.log(ninjaTurtles[i].toUpperCase())
@@ -88,8 +88,64 @@ let ninjaTurtles = ['mikey', 'Donny', 'leo', 'Raff']
 
 //Bonus:
 
-for (i = 0; i < ninjaTurtles.length; i++) {
-	if (i % 2 === 0) { 
-		console.log(ninjaTurtles[i].toUpperCase())
-	} else console.log(ninjaTurtles[i].toLowerCase())
-} 
+// for (i = 0; i < ninjaTurtles.length; i++) {
+// 	if (i % 2 === 0) { 
+// 		console.log(ninjaTurtles[i].toUpperCase())
+// 	} else console.log(ninjaTurtles[i].toLowerCase())
+// } 
+
+//Return of the Closets
+
+
+
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+//Alien Attire
+
+const kristynsShoe = kristynsCloset.splice(0, 1);
+
+thomsCloset[2].push(kristynsShoe[0]);
+
+console.log(kristynsShoe);
+console.log(thomsCloset);
+console.log(kristynsCloset);
+
+//Dress 'em up
+
+console.log(`Today, Kristyn is wearing ${kristynsCloset[0]}, with some ${kristynsCloset[3]} and her trademark ${kristynsCloset[2]}. She's fab! She's also eating ${kristynsCloset[5]}, because that's not a thing you wear.`)
+
+console.log(`Today, Thoms is wearing a ${thomsCloset[0][0]} and ${thomsCloset[1][1]} and a pair of ${thomsCloset[2][0]}. He looks killer.`)
+
+
+
+
+
