@@ -129,23 +129,50 @@ const thomsCloset = [
   ]
 ];
 
-//Alien Attire
+// //Alien Attire
 
-const kristynsShoe = kristynsCloset.splice(0, 1);
+// const kristynsShoe = kristynsCloset.splice(0, 1);
 
-thomsCloset[2].push(kristynsShoe[0]);
+// thomsCloset[2].push(kristynsShoe[0]);
 
-console.log(kristynsShoe);
-console.log(thomsCloset);
-console.log(kristynsCloset);
+// console.log(kristynsShoe);
+// console.log(thomsCloset);
+// console.log(kristynsCloset);
 
-//Dress 'em up
+// //Dress 'em up
 
-console.log(`Today, Kristyn is wearing ${kristynsCloset[0]}, with some ${kristynsCloset[3]} and her trademark ${kristynsCloset[2]}. She's fab! She's also eating ${kristynsCloset[5]}, because that's not a thing you wear.`)
+// console.log(`Today, Kristyn is wearing ${kristynsCloset[0]}, with some ${kristynsCloset[3]} and her trademark ${kristynsCloset[2]}. She's fab! She's also eating ${kristynsCloset[5]}, because that's not a thing you wear.`)
 
-console.log(`Today, Thoms is wearing a ${thomsCloset[0][0]} and ${thomsCloset[1][1]} and a pair of ${thomsCloset[2][0]}. He looks killer.`)
+// console.log(`Today, Thoms is wearing a ${thomsCloset[0][0]} and ${thomsCloset[1][1]} and a pair of ${thomsCloset[2][0]}. He looks killer.`)
 
 
+//Dirty Laundry
+
+// for (i = 0; i <= kristynsCloset.length; i++) {
+// 	console.log('WHIRR: now washing ' + kristynsCloset[i])
+// };
+
+// console.log(thomsCloset[0], thomsCloset[1], thomsCloset[2]);
+// // I think this is what you're asking? 
+
+const pool = [];
+
+for (i = 1; i <= 1000; i++) {
+
+	if (i % 3 === 0 || i % 5 === 0) {
+		pool.push(i);
+	} 
+};
+
+const sum = pool.reduce(add, 0);
+
+function add(a, b) {
+	return a + b;
+}
+
+console.log(sum);
+
+//this is maybe not the way we were supposed to do this, but I found it online and made it work! that counts for something, right?
 
 
 
